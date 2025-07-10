@@ -19,7 +19,6 @@ import { getStorage } from "firebase/storage";
 
 import { shield } from 'lucide-react';
 
-
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -28,15 +27,16 @@ export default function Login() {
   const router = useRouter();
   const[message,setMessage] = useState("");
   const[cont,setCont] = useState(false); 
-  const firebaseConfig = {
-    apiKey: "AIzaSyAZBuoliNmCKijga49KPaJwFDApRsvHb3Q",
-    authDomain: "dentvision-e6298.firebaseapp.com",
-    projectId: "dentvision-e6298",
-    storageBucket: "dentvision-e6298.firebasestorage.app",
-    messagingSenderId: "689681960765",
-    appId: "1:689681960765:web:bb3bb88d8b80a74ab43f54",
-    measurementId: "G-FJ69B4N0W6"
-  };
+  // const firebaseConfig = {
+    
+  //   apiKey: "AIzaSyAZBuoliNmCKijga49KPaJwFDApRsvHb3Q",
+  //   authDomain: "dentvision-e6298.firebaseapp.com",
+  //   projectId: "dentvision-e6298",
+  //   storageBucket: "dentvision-e6298.firebasestorage.app",
+  //   messagingSenderId: "689681960765",
+  //   appId: "1:689681960765:web:bb3bb88d8b80a74ab43f54",
+  //   measurementId: "G-FJ69B4N0W6"
+  // };
   
   const app = initializeApp(firebaseConfig);
   
