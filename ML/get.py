@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 # Enable CORS for all routes
 CORS(app)
-MONGO_URI='mongodb+srv://agastyamishra2006:324Am021@cluster0.tqztm.mongodb.net/Predictions?retryWrites=true&w=majority&appName=Cluster0'
+#MONGO_URI='mongodb+srv://agastyamishra2006:324Am021@cluster0.tqztm.mongodb.net/Predictions?retryWrites=true&w=majority&appName=Cluster0'
 
 client = MongoClient(MONGO_URI)
 db = client['Predictions']
